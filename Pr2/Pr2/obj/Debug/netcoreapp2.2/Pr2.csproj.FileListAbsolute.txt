@@ -1,0 +1,11 @@
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\bin\Debug\netcoreapp2.2\Pr2.deps.json
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\bin\Debug\netcoreapp2.2\Pr2.runtimeconfig.json
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\bin\Debug\netcoreapp2.2\Pr2.runtimeconfig.dev.json
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\bin\Debug\netcoreapp2.2\Pr2.dll
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\bin\Debug\netcoreapp2.2\Pr2.pdb
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\obj\Debug\netcoreapp2.2\Pr2.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\obj\Debug\netcoreapp2.2\Pr2.AssemblyInfoInputs.cache
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\obj\Debug\netcoreapp2.2\Pr2.AssemblyInfo.cs
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\obj\Debug\netcoreapp2.2\Pr2.dll
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\obj\Debug\netcoreapp2.2\Pr2.pdb
+C:\Users\Igor\Desktop\c#\new\Pr2\Pr2\obj\Debug\netcoreapp2.2\Pr2.csprojAssemblyReference.cache

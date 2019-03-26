@@ -1,0 +1,10 @@
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\bin\Debug\netcoreapp2.2\Pr1.deps.json
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\bin\Debug\netcoreapp2.2\Pr1.runtimeconfig.json
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\bin\Debug\netcoreapp2.2\Pr1.runtimeconfig.dev.json
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\bin\Debug\netcoreapp2.2\Pr1.dll
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\bin\Debug\netcoreapp2.2\Pr1.pdb
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\obj\Debug\netcoreapp2.2\Pr1.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\obj\Debug\netcoreapp2.2\Pr1.AssemblyInfoInputs.cache
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\obj\Debug\netcoreapp2.2\Pr1.AssemblyInfo.cs
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\obj\Debug\netcoreapp2.2\Pr1.dll
+C:\Users\Igor\Desktop\c#\new\Pr1\Pr1\obj\Debug\netcoreapp2.2\Pr1.pdb
