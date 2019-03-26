@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace pr2
 {
-    public class Auto : Details,  IComparable<Auto>
+    public class Auto : Details, IComparable<Auto>
     {
         public string Firma { get; set; }
         public string Model { get; set; }
@@ -25,9 +25,9 @@ namespace pr2
             int Diameter, double PriceWheel, string WheelManufactures
             ) : base
             (
-             BodyColor,  Weight,  Motor,
-             PriceDoor,  NumberOfDoors,  ColorDoor,
-             Diameter, PriceWheel,  WheelManufactures
+             BodyColor, Weight, Motor,
+             PriceDoor, NumberOfDoors, ColorDoor,
+             Diameter, PriceWheel, WheelManufactures
             )
         {
             this.Firma = Firma;
@@ -66,9 +66,111 @@ namespace pr2
 
         public void ShowAuto()
         {
-            Console.WriteLine($"\nПроизводитель : {Firma}, Модель : {Model}, Номер : {Number}, Цена : {Price}, Скороть : {Speed};"); 
+            Console.WriteLine($"\nПроизводитель : {Firma}, Модель : {Model}, Номер : {Number}, Цена : {Price}, Скороть : {Speed};");
         }
 
-       
+        public static List<Auto> SortAuto(List<Auto> auto)
+        {
+            Console.WriteLine("\nЧто сортировать? (1 - фирма, 2 - модель, 3 - номер, 4 - цена, 5 - скорость)");
+            int sortColumn = Convert.ToInt32(Console.ReadLine());
+
+            if (sortColumn == 1)
+            {
+                Console.WriteLine("Сортировать по возрастанию - 1, убыванию - 2");
+                int question = Convert.ToInt32(Console.ReadLine());
+                switch (question)
+                {
+                    case 1:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us1.Firma.CompareTo(us2.Firma); });
+                        break;
+                    case 2:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us2.Firma.CompareTo(us1.Firma); });
+                        break;
+                    default:
+                        Console.WriteLine("Вы ввели не то...");
+                        break;
+                }
+            }
+            else if (sortColumn == 2)
+            {
+                Console.WriteLine("Сортировать по возрастанию - 1, убыванию - 2");
+                int question = Convert.ToInt32(Console.ReadLine());
+                switch (question)
+                {
+                    case 1:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us1.Model.CompareTo(us2.Model); });
+                        break;
+                    case 2:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us2.Model.CompareTo(us1.Model); });
+                        break;
+                    default:
+                        Console.WriteLine("Вы ввели не то...");
+                        break;
+                }
+            }
+            else if (sortColumn == 3)
+            {
+                Console.WriteLine("Сортировать по возрастанию - 1, убыванию - 2");
+                int question = Convert.ToInt32(Console.ReadLine());
+                switch (question)
+                {
+                    case 1:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us1.Number.CompareTo(us2.Number); });
+                        break;
+                    case 2:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us2.Number.CompareTo(us1.Number); });
+                        break;
+                    default:
+                        Console.WriteLine("Вы ввели не то...");
+                        break;
+                }
+            }
+            else if (sortColumn == 4)
+            {
+                Console.WriteLine("Сортировать по возрастанию - 1, убыванию - 2");
+                int question = Convert.ToInt32(Console.ReadLine());
+                switch (question)
+                {
+                    case 1:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us1.Price.CompareTo(us2.Price); });
+                        break;
+                    case 2:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us2.Price.CompareTo(us1.Price); });
+                        break;
+                    default:
+                        Console.WriteLine("Вы ввели не то...");
+                        break;
+                }
+            }
+            else if (sortColumn == 5)
+            {
+                Console.WriteLine("Сортировать по возрастанию - 1, убыванию - 2");
+                int question = Convert.ToInt32(Console.ReadLine());
+                switch (question)
+                {
+                    case 1:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us1.Speed.CompareTo(us2.Speed); });
+                        break;
+                    case 2:
+                        auto.Sort(delegate (Auto us1, Auto us2)
+                        { return us2.Speed.CompareTo(us1.Speed); });
+                        break;
+                    default:
+                        Console.WriteLine("Вы ввели не то...");
+                        break;
+                }
+            }
+
+            return auto;
+        }
     }
 }

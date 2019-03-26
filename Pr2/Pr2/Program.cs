@@ -31,9 +31,9 @@ namespace pr2
                 19, 1926.4, "Nissan"
                 ));
             
-            Console.WriteLine($"Wheel Diameter {auto[0].WheelObj.Diameter}");
-            Console.WriteLine($"Wheel Price {auto[0].WheelObj.Price}");
-            Console.WriteLine($"Wheel WheelManufactures {auto[0].WheelObj.WheelManufacturer}");
+            //Console.WriteLine($"Wheel Diameter {auto[0].WheelObj.Diameter}");
+            //Console.WriteLine($"Wheel Price {auto[0].WheelObj.Price}");
+            //Console.WriteLine($"Wheel WheelManufactures {auto[0].WheelObj.WheelManufacturer}");
             //{ Firma = "Audi", Model = "GT-212", Number = "AF 2021 F", Price = 118050, Speed = 281.0 }
             //auto.Add(new Auto() { Firma = "BMV", Model = "A-8", Number = "AX 9341 F", Price = 154010, Speed = 334.0 });
             //auto.Add(new Auto() { Firma = "Kia", Model = "V-prm", Number = "FF 8431 F", Price = 152300, Speed = 320.0 });
@@ -47,17 +47,16 @@ namespace pr2
 
          
 
-            GFG sortAuto = new GFG();
+            //GFG sortAuto = new GFG();
 
-            Console.WriteLine("До сортировки\n");
+            Console.WriteLine("\nДо сортировки\n");
 
             foreach (Auto a in auto)
             {
                 a.ShowAuto();
             }
 
-            //auto.Sort(sortAuto);
-            Array.Sort(auto.ToArray());
+            Auto.SortAuto(auto);
 
             Console.WriteLine("\nПосле сортировки\n");
 
