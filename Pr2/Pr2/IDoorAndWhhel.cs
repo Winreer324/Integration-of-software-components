@@ -2,8 +2,8 @@
 
 namespace pr2
 {
-    public interface IDoorAndWhhel : Door, Wheel
-    { 
-    }
+    //public interface IDoorAndWhhel : Door, Wheel
+    //{ 
+    //}
 }
 

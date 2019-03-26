@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace pr2
 {
@@ -7,10 +8,14 @@ namespace pr2
         public double Price;
         public int NumberOfDoors;
         public string ColorDoor;
-         
-        public Door()
+
+        public static List<object> DoorArray;
+
+        public Door(double Price, int NumberOfDoors, string ColorDoor)
 	    {
-	    }
+            //DoorArray = new List<object> { this.Price, this.NumberOfDoors, this.ColorDoor };
+            this.Price = Price; this.NumberOfDoors = NumberOfDoors; this.ColorDoor = ColorDoor;
+        }
 
         public void AddDoor()
         { 
@@ -23,8 +28,8 @@ namespace pr2
             Console.Write("Введите цвет дверей : ");
             ColorDoor = Convert.ToString(Console.ReadLine());
         }
-
-        public void showDoor()
+         
+        public void ShowDoor()
         {
             Console.WriteLine($"\nЦена дверей : {Price}, Колицество дверей : {NumberOfDoors}, Цвет дверей : {ColorDoor};");
         }

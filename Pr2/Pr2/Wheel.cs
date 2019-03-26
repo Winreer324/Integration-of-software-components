@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace pr2
 {
@@ -6,11 +7,15 @@ namespace pr2
     {
         public int Diameter;
         public double Price; 
-        public string WheelManufacturer; 
+        public string WheelManufacturer;
 
-        //public Wheel()
-        //{
-        //}
+        public static Wheel Wheels;
+
+        public Wheel(int Diameter, double Price, string WheelManufacturer)
+        {
+            //Wheels = new Wheel(this.Diameter, this.Price, this.WheelManufacturer);
+            this.Diameter = Diameter; this.Price = Price; this.WheelManufacturer = WheelManufacturer;
+        }
 
         public void AddWheel()
         {

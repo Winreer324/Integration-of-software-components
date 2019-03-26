@@ -1,39 +1,49 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace pr2
 {
-    public class Auto
+    public class Auto : Details,  IComparable<Auto>
     {
         public string Firma { get; set; }
         public string Model { get; set; }
         public string Number { get; set; }
         public double Price { get; set; }
-        public double Speed { get; set; } 
+        public double Speed { get; set; }
 
-        Details DetailsAuto;
-        Door DoorAuto;
-        Wheel WheelAuto;
+        //List<object> DetailsAutoArray = new List<object> { DoorAuto, Wheel };
 
-        public Auto()
+        //Details DetailsAuto;
+        //Door DoorAuto; 
+        //Wheel WheelAuto;
+
+        public Auto
+            (
+            string Firma, string Model, string Number, double Price, double Speed,
+            string BodyColor, double Weight, string Motor,
+            double PriceDoor, int NumberOfDoors, string ColorDoor,
+            int Diameter, double PriceWheel, string WheelManufactures
+            ) : base
+            (
+             BodyColor,  Weight,  Motor,
+             PriceDoor,  NumberOfDoors,  ColorDoor,
+             Diameter, PriceWheel,  WheelManufactures
+            )
         {
-            DetailsAuto = new Details();
-            DoorAuto = new Door();
-            WheelAuto = new Wheel();
+            this.Firma = Firma;
+            this.Model = Model;
+            this.Number = Number;
+            this.Price = Price;
+            this.Speed = Speed;
         }
 
-        public void InitDetails()
+        public int CompareTo(Auto o)
         {
-            DetailsAuto = new Details();
-        }
-
-        public void InitDoors()
-        {
-            DoorAuto = new Door();
-        }
-
-        public void InitWheels()
-        {
-            WheelAuto = new Wheel();
+            Auto p = o as Auto;
+            if (p != null)
+                return this.Speed.CompareTo(p.Speed);
+            else
+                throw new Exception("Невозможно сравнить два объекта");
         }
 
         public void AddAuto()
@@ -58,5 +68,7 @@ namespace pr2
         {
             Console.WriteLine($"\nПроизводитель : {Firma}, Модель : {Model}, Номер : {Number}, Цена : {Price}, Скороть : {Speed};"); 
         }
+
+       
     }
 }

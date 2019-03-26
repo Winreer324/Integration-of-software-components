@@ -1,19 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace pr2
 {
-    public class Details : IDoorAndWhhel
+    public class Details
     {
-        Door Doors;
-        Wheel Wheels;
-        string BodyColor;
-        string Weight;
-        string Motor;
+        public string BodyColor;
+        public double Weight;
+        public string Motor;
 
-        public Details()
+        //public List<var> DetailsArray;
+
+        public Door DoorObj;
+        public Wheel WheelObj;
+
+        public Details(
+            string BodyColor, double Weight, string Motor,
+            double PriceDoor, int NumberOfDoors, string ColorDoor,
+            int Diameter, double PriceWheel, string WheelManufactures
+            )
         {
-            Doors = new Door();
-            Wheels = new Wheel();
+            this.BodyColor = BodyColor; this.Weight = Weight; this.Motor = Motor;
+            DoorObj = new Door(PriceDoor, NumberOfDoors, ColorDoor);
+            WheelObj = new Wheel(Diameter, PriceWheel, WheelManufactures);
+            //DetailsArray = new Array { DoorObj, WheelObj };
         }
 
         public void AddDetails()
@@ -22,15 +32,15 @@ namespace pr2
             BodyColor = Convert.ToString(Console.ReadLine());
 
             Console.Write("Введите сколько весит машина? : ");
-            Weight = Convert.ToString(Console.ReadLine());
+            Weight = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Введите какая мощность у машины? : ");
             Motor = Convert.ToString(Console.ReadLine());
 
             
-            Doors.AddDoor();
+            //Doors.AddDoor();
 
-            Wheels.AddWheel();
+            //Wheels.AddWheel();
         }
 
         public void ShowDetails() 
