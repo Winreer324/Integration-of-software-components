@@ -21,7 +21,7 @@ namespace pr2
             )
         {
             this.BodyColor = BodyColor; this.Weight = Weight; this.Motor = Motor;
-            DoorObj = new Door(PriceDoor, NumberOfDoors, ColorDoor);
+            DoorObj = new Door(PriceDoor, ColorDoor);
             WheelObj = new Wheel(Diameter, PriceWheel, WheelManufactures);
             //DetailsArray = new Array { DoorObj, WheelObj };
         }

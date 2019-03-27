@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Pr2;
+using System;
 using System.Collections.Generic;
 
 namespace pr2
 {
-    public class Auto : Details, IComparable<Auto>
+    public class Auto : IComparable<Auto>
     {
         public string Firma { get; set; }
         public string Model { get; set; }
@@ -14,20 +15,18 @@ namespace pr2
         //List<object> DetailsAutoArray = new List<object> { DoorAuto, Wheel };
 
         //Details DetailsAuto;
-        //Door DoorAuto; 
-        //Wheel WheelAuto;
+        public Door DoorAuto;
+        public Wheel WheelAuto;
+        public Engine EngineAuto;
+        public Body BodyAuto;
 
         public Auto
             (
             string Firma, string Model, string Number, double Price, double Speed,
-            string BodyColor, double Weight, string Motor,
-            double PriceDoor, int NumberOfDoors, string ColorDoor,
-            int Diameter, double PriceWheel, string WheelManufactures
-            ) : base
-            (
-             BodyColor, Weight, Motor,
-             PriceDoor, NumberOfDoors, ColorDoor,
-             Diameter, PriceWheel, WheelManufactures
+            double PriceDoor, string ColorDoor,
+            int DiameterWheel, double PriceWheel, string WheelManufacturer,
+            double PowerEngine, double VolumeEngine,
+            string BodyColor, double BodyWeight
             )
         {
             this.Firma = Firma;
@@ -35,6 +34,11 @@ namespace pr2
             this.Number = Number;
             this.Price = Price;
             this.Speed = Speed;
+
+            DoorAuto = new Door(PriceDoor, ColorDoor);
+            WheelAuto = new Wheel(DiameterWheel, PriceWheel, WheelManufacturer);
+            EngineAuto = new Engine(PowerEngine, VolumeEngine);
+            BodyAuto = new Body(BodyColor, BodyWeight);
         }
 
         public int CompareTo(Auto o)
