@@ -8,12 +8,7 @@ using System.Threading.Tasks;
 namespace Pr5
 { 
     class Program
-    {
-        //static string myConnectionString = "Database=auto;Data Source=localhost;User Id=root;Password=";
-        //static MySqlConnection myConnection;
-        //static MySqlCommand query = myConnection.CreateCommand();
-
-
+    {  
         static void Main(string[] args)
         {
             DB db = new DB(); 
@@ -27,8 +22,7 @@ namespace Pr5
                 {
                     choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
-                    {
-                        //case 0: ShowAll(); break
+                    { 
                         case 0: db.GetTable("SELECT * FROM auto;"); break;
                         case 1: ShowTable(db); break;
                         case 2: db.UpdateRowTableAuto(); break;

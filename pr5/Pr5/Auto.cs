@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Pr5
+namespace Pr6
 {
     public class Auto : IComparable<Auto>
     {
