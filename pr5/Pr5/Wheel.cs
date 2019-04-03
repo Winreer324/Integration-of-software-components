@@ -12,8 +12,7 @@ namespace Pr5
         public static Wheel Wheels;
 
         public Wheel(int Diameter, double Price, string WheelManufacturer)
-        {
-            //Wheels = new Wheel(this.Diameter, this.Price, this.WheelManufacturer);
+        {  
             this.Diameter = Diameter; this.Price = Price; this.WheelManufacturer = WheelManufacturer;
         }
 

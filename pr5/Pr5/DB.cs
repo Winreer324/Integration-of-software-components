@@ -1,7 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Data.SqlClient;
-//using MySql.Data.MySqlClient;
+using System.Data.SqlClient; 
 
 namespace Pr5
 {
@@ -9,10 +8,7 @@ namespace Pr5
     {
         private const string MyConfigDB = "Database=auto;Data Source=localhost;User Id=root;Password=;";
 
-        public DB()
-        {
-        }
-
+        public DB() {}
         public void GetTable(string getQuery)
         {
             try

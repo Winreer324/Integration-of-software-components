@@ -8,11 +8,7 @@ namespace Pr6
         public int Id { get; set; }
         public double Price { get; set; }
         public string ColorDoor { get; set; } 
-
-     //   public Door(double Price, string ColorDoor)
-	    //{ 
-     //       this.Price = Price; this.ColorDoor = ColorDoor;
-     //   }
+         
 
         public void AddDoor()
         { 

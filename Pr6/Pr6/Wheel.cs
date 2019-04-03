@@ -10,12 +10,6 @@ namespace Pr6
         public double Price { get; set; }
         public string WheelManufacturer { get; set; }
           
-        //public Wheel(int Diameter, double Price, string WheelManufacturer)
-        //{
-        //    //Wheels = new Wheel(this.Diameter, this.Price, this.WheelManufacturer);
-        //    this.Diameter = Diameter; this.Price = Price; this.WheelManufacturer = WheelManufacturer;
-        //}
-
         public void AddWheel()
         {
             Console.Write("Введите диаметр колес : ");

@@ -42,30 +42,6 @@ namespace Pr6
                 db.Autos.Add(auto1);
                 db.Autos.Add(auto2);
                 db.Autos.Add(auto3);
-                //db.Autos.Add(new Auto
-                //(
-                //Firma: "Nissan",Model: "M-6", Number:"AA 939 F", Price: 120132.4, Speed: 266.1,
-                //PriceDoor: 1188.9, ColorDoor: "RED",
-                //DiameterWheel: 15, PriceWheel: 3500, WheelManufacturer: "Michlen",
-                //PowerEngine: 350, VolumeEngine: 2.5,
-                //BodyColor: "Red", BodyWeight: 950
-                //));
-                //db.Autos.Add(new Auto
-                //(
-                //Firma: "Nissan", Model: "M-2", Number: "AA 245 A", Price: 120132.4, Speed: 229.7,
-                //PriceDoor: 1311.2, ColorDoor: "Blue",
-                //DiameterWheel: 18, PriceWheel: 4150, WheelManufacturer: "Michlen",
-                //PowerEngine: 277, VolumeEngine: 3.1,
-                //BodyColor: "Blue", BodyWeight: 1050
-                //));
-                //db.Autos.Add(new Auto
-                //(
-                //Firma: "Audi", Model: "RX", Number: "FF 111 F", Price: 140222.3, Speed: 412.1,
-                //PriceDoor: 2924.5, ColorDoor: "Black",
-                //DiameterWheel: 20, PriceWheel: 3246, WheelManufacturer: "Michlen",
-                //PowerEngine: 331, VolumeEngine: 2.7,
-                //BodyColor: "Black", BodyWeight: 870
-                //));
 
 
                 db.SaveChanges();
