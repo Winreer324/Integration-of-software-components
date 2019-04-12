@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Pr6
+namespace Pr7
 {
     internal class AutoRepository : IRepository<Auto>
     {

@@ -11,9 +11,9 @@ namespace Pr6
         public string Number { get; set; }
         public double Price { get; set; }
         public double Speed { get; set; }
-         
-        //public Door DoorAuto;
-        //public Wheel WheelAuto;
+
+        public Door DoorAuto;
+        public Wheel WheelAuto;
         public Engine EngineAuto;
         public Body BodyAuto;
 

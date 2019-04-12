@@ -12,7 +12,6 @@ namespace Pr5
 
         public Door(double Price, string ColorDoor)
 	    {
-            //DoorArray = new List<object> { this.Price, this.NumberOfDoors, this.ColorDoor };
             this.Price = Price; this.ColorDoor = ColorDoor;
         }
 

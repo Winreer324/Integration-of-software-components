@@ -32,7 +32,8 @@ namespace Pr9.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("{x}")]
+        [
+            HttpPut("{x}")]
         public void Put(int x, [FromBody] string value)
         {
         }
